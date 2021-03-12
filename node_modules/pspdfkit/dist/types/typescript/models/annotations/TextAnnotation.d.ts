@@ -1,0 +1,42 @@
+import Annotation from './Annotation';
+import Color from '../Color';
+import { BorderStyleType } from '../../enums/BorderStyle';
+import Callout from '../Callout';
+import { AnnotationCtorProps } from './Annotation';
+export declare type TextAnnotationArgs = AnnotationCtorProps & {
+    text?: string;
+    fontColor?: Color | null | undefined;
+    backgroundColor?: Color | null | undefined;
+    font?: string;
+    rotation?: number | null | undefined;
+    fontSize?: number | null | undefined;
+    isBold?: boolean | null | undefined;
+    isItalic?: boolean | null | undefined;
+    horizontalAlign?: 'left' | 'center' | 'right';
+    verticalAlign?: 'top' | 'center' | 'bottom';
+    callout?: Callout | null | undefined;
+    borderStyle?: BorderStyleType | null | undefined;
+    borderWidth?: number | null | undefined;
+};
+declare class TextAnnotation extends Annotation {
+    text: string;
+    fontColor: Color | null | undefined;
+    backgroundColor: Color | null | undefined;
+    font: string;
+    rotation: number;
+    fontSize: number;
+    isBold: boolean;
+    isItalic: boolean;
+    horizontalAlign: 'left' | 'center' | 'right';
+    verticalAlign: 'top' | 'center' | 'bottom';
+    isFitting: boolean;
+    callout: Callout | null | undefined;
+    borderStyle: BorderStyleType | null | undefined;
+    borderWidth: number | null | undefined;
+    static defaultValues: any;
+    static isEditable: boolean;
+    static readableName: string;
+    static fontSizePresets: readonly number[];
+    constructor(args?: TextAnnotationArgs);
+}
+export default TextAnnotation;
