@@ -20,7 +20,7 @@ Are you [evaluating our SDK](https://pspdfkit.com/try/)? That's great, we're hap
 Clone the repo:
 
 ```bash
-git clone https://github.com/PSPDFKit/pspdfkit-web-example-vue-2.git
+git clone -b vue-2 https://github.com/PSPDFKit/pspdfkit-web-example-vue.git
 cd pspdfkit-web-example-vue-2
 ```
 
