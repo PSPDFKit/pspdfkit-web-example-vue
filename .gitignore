@@ -1,0 +1,5 @@
+/node_modules
+public/js/nutrient-viewer.js
+public/js/nutrient-viewer-lib/*
+public/js/pspdfkit.js
+public/js/pspdfkit-lib/*
